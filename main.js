@@ -6,15 +6,19 @@ $(document).ready(function () {
         
         var imgInVista = $("img.active");
         imgInVista.removeClass("active");
+
         var iInVista = $("i.active");
         iInVista.removeClass("active");
-        var prima = $("img.first");
         
-        if(imgInVista.next("img")) {
+        var primaImg = $("img.first");
+        var primoPallino = $("i.first");
+        
+        if(imgInVista.next("img").length) {
             imgInVista.next("img").addClass("active");
             iInVista.next("i").addClass("active");
         } else {
-            prima.addClass("active");
+            primaImg.addClass("active");
+            primoPallino.addClass("active");
             
         }
     });
@@ -25,15 +29,19 @@ $(document).ready(function () {
         
         var imgInVista = $("img.active");
         imgInVista.removeClass("active");
+
         var iInVista = $("i.active");
         iInVista.removeClass("active");
-        var ultima = $("img.last");
+
+        var ultimaImg = $("img.last");
+        var ultimoPallino = $("i.last");
         
-        if(imgInVista.prev("img")) {
+        if(imgInVista.prev("img").length) {
             imgInVista.prev("img").addClass("active");
             iInVista.prev("i").addClass("active");
         } else {
-           ultima.addClass("active");
+           ultimaImg.addClass("active");
+           ultimoPallino.addClass("active");
             
         }
     });
