@@ -16,7 +16,7 @@ i {
     display: flex;
     margin: 0 auto;
     width: 65%;
-    height: 90vh;
+    height: 88vh;
 }
 .slider-wrapper {
     position: relative;
@@ -40,7 +40,7 @@ i {
 .prev, .next {
     position: absolute;
     color: #565a5c;
-    top: 50%;
+    top: 40%;
     left: 0;
     transform: translateY(-50%);
     font-size: 40px;
@@ -70,8 +70,10 @@ i {
 
 h1 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 35px;
     color: #FFF;
     font-weight: 700;
     font-size: 35px;
 }
+
+
