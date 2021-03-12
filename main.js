@@ -50,7 +50,7 @@ $(document).ready(function () {
 
     //SCORRERE CON FRECCE TASTIERA
     
-    $(document.documentElement).keyup(function(e) {
+    $(document).keyup(function(e) {
         
         if(e.keyCode == 39) {
             var imgInVista = $("img.active");
@@ -92,6 +92,18 @@ $(document).ready(function () {
         }
     });
 
+    //CLICK SU PALLINI
+
+    $(".slider-wrapper .nav i").click(function(){
+       var dotPos =  $(".slider-wrapper .nav i").index(this);
+        var images = $(".slider-wrapper .images img");
+
+        $(".slider-wrapper .nav i").removeClass("active");
+        images.removeClass("active");
+
+        $(this).addClass("active");
+        images.eq(dotPos).addClass("active");
+    })
 
 
 });
